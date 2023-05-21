@@ -1,3 +1,5 @@
+from String import String
+
 let TYPE_C: Int    =  0
 let TYPE_A: Int    =  1
 let TYPE_N: Int    =  2
@@ -31,5 +33,21 @@ let TYPE_CG3: Int  = 29
 let TYPE_W: Int    = 30 # hydrated ligand
 let TYPE_SIZE: Int = 31
 
+
+struct Atom_kind:
+    var radius: F32
+    var depth: F32
+    var hb_depth: F32 
+    var hb_radius: F32
+    var solvation: F32
+    var volume: F32
+    var covalent_radius: F32
+   
+struct Atom_equivalence:
+    var name: String
+    var to: String
+    
 let metal_solvation_parameter:F32 = -0.00110;
 let metal_covalent_radius:F32 = 1.75;
+
+ 
